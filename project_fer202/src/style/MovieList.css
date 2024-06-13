@@ -1,0 +1,56 @@
+/* MovieList.css */
+
+.movie-list {
+  padding: 20px;
+}
+
+.tab-films {
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.movie-card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin-bottom: 20px;
+}
+
+.movie-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  height: 633px; /* Set the height of the image */
+  width: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensure the image covers the area */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card-body {
+  background-color: #fff;
+  padding: 15px; /* Reduce padding for a more compact look */
+}
+
+.card-title {
+  font-size: 1.2em; /* Reduce font size for the title */
+  font-weight: bold;
+  margin-bottom: 10px; /* Add margin bottom for spacing */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+.card-text {
+  color: #666;
+  font-size: 1em; /* Reduce font size for text */
+}
+
+.btn-primary {
+  margin-top: 10px; /* Adjust margin for button positioning */
+}

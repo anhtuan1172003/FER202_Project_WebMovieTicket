@@ -1,6 +1,6 @@
 import React from 'react';
 import { Row, Col, Card, Tab, Tabs, Button } from 'react-bootstrap';
-import './MovieList.css';
+import './style/MovieList.css';
 
 const movieshowing = [
   { id: 1, title: 'Movie 1', genre: 'Description 1', poster: 'image/movie1.jpeg' },
