@@ -1,0 +1,86 @@
+.bg-gray-900 {
+  background-color: #1a202c;
+}
+
+.text-white {
+  color: white;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.bg-gray-800 {
+  background-color: #2d3748;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  color: white;
+}
+
+.hover\:bg-red-500:hover {
+  background-color: #ef4444;
+}
+
+.pl-4 {
+  padding-left: 1rem;
+}
+.movie-poster {
+  width: 50px;
+  height: 100px;
+  object-fit: cover;
+}
+.font-bold{
+  text-align: center;
+}
+.mb-4{
+  text-align: center;
+  margin: 20px;
+}
