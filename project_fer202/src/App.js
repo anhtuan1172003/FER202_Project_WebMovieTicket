@@ -3,6 +3,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import './style/App.css';
 import MainContent from "./components/MainContent";
+import AccountNav from "./components/AccountNav";
 
 
 const comingmovies = [
@@ -39,6 +40,9 @@ export default function App() {
   return (
     <div className="app">
       <Row><Col><Header /></Col></Row>
+      <Row>
+        <AccountNav/>
+      </Row>
       <Row>
         <Col>
           <Carousel style={{ height: "500px", overflow: "hidden" }}>
