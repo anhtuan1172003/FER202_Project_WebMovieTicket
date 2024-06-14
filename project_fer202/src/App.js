@@ -1,8 +1,9 @@
-import { Row, Col, Container, Image, Carousel } from "react-bootstrap";
+import { Row, Col, Image, Carousel } from "react-bootstrap";
 import Header from './components/Header';
 import Footer from './components/Footer';
 import './style/App.css';
 import MainContent from "./components/MainContent";
+
 
 
 const comingmovies = [
@@ -44,13 +45,13 @@ export default function App() {
           <Carousel style={{ height: "500px", overflow: "hidden" }}>
             {banners.map((banner) => (
               <Carousel.Item >
-                <Image src={banner.imageSrc} style={{ width: "100%", height: "auto" }} />
+                <Image src={banner.imageSrc} style={{ width: "100%", height: "500px" }} />
               </Carousel.Item>
             ))}
           </Carousel>
         </Col>
       </Row>
-      <Row><Col><Container><MainContent comingmovies = {comingmovies} showingmovies= {showingmovies}/></Container></Col></Row>
+      <Row><MainContent comingmovies = {comingmovies} showingmovies= {showingmovies}/></Row>
       <Row><Col><Footer/></Col></Row>
     </div>
   );

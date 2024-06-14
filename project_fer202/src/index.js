@@ -6,6 +6,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css'
 import "./style/Index.css"
 import App from './App';
 
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>

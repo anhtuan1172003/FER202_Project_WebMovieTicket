@@ -1,0 +1,7 @@
+.header-tab{
+    align-items: right;
+    text-align: right;
+  }
+.header-brand{
+    display: flex;
+}
