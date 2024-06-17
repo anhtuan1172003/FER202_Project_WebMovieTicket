@@ -3,7 +3,6 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import './style/App.css';
 import MainContent from "./components/MainContent";
-import AccountNav from "./components/AccountNav";
 
 
 const comingmovies = [
@@ -39,9 +38,8 @@ const banners = [
 export default function App() {
   return (
     <div className="app">
-      <Row><Col><Header /></Col></Row>
       <Row>
-        <AccountNav/>
+        <Col><Header /></Col>
       </Row>
       <Row>
         <Col>
@@ -54,8 +52,18 @@ export default function App() {
           </Carousel>
         </Col>
       </Row>
-      <Row><Col><Container><MainContent comingmovies = {comingmovies} showingmovies= {showingmovies}/></Container></Col></Row>
-      <Row><Col><Footer/></Col></Row>
+      <Row>
+        <Col>
+          <Container>
+            <MainContent comingmovies={comingmovies} showingmovies={showingmovies} />
+          </Container>
+        </Col>
+      </Row>
+      <Row>
+        <Col
+        ><Footer />
+        </Col>
+      </Row>
     </div>
   );
 }
