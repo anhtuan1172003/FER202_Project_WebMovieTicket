@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import './style/App.css';
 import MainContent from "./components/MainContent";
 import AccountNav from "./components/AccountNav";
+import MovieList from "./components/MovieList";
 
 
 const comingmovies = [
@@ -55,6 +56,7 @@ export default function App() {
         </Col>
       </Row>
       <Row><Col><Container><MainContent comingmovies = {comingmovies} showingmovies= {showingmovies}/></Container></Col></Row>
+      <Row><Col><Container><MovieList/></Container></Col></Row>
       <Row><Col><Footer/></Col></Row>
     </div>
   );

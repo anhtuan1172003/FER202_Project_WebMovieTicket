@@ -1,5 +1,9 @@
 /* MovieList.css */
 
+body {
+  background-color: #4a4747; /* Set the background color of the page */
+}
+
 .movie-list {
   padding: 20px;
 }
@@ -16,6 +20,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s, box-shadow 0.3s;
   margin-bottom: 20px;
+  background-color: #fff; /* Ensure the movie card background is white */
 }
 
 .movie-card:hover {
