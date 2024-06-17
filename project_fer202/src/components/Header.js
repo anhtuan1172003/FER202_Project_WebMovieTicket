@@ -9,7 +9,7 @@ export default function Header() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#schedule">Schedule</Nav.Link>
+            <Nav.Link href="#schedule">Showtime</Nav.Link>
             <Nav.Link href="#sales">Sales</Nav.Link>
             <Nav.Link href="#blog">Blog</Nav.Link>
             <Nav.Link href="#signin_signup">Sign In/Sign Up</Nav.Link>

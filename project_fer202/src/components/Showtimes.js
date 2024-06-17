@@ -8,7 +8,8 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import React from 'react';
 import Image from 'react-bootstrap/Image';
-import '../style/Showtimes.css'; // Assuming you have some basic styles
+
+import './Showtimes.css'; // Assuming you have some basic styles
 
 export default function Showtimes(){
         const movies = [
@@ -17,7 +18,7 @@ export default function Showtimes(){
               origin: "Mỹ",
               releaseDate: "14/06/2024",
               ageRestriction: "T16 - PHIM ĐƯỢC PHỔ BIẾN ĐẾN NGƯỜI XEM TỪ ĐỦ 16 TUỔI TRỞ LÊN (16+)",
-              duration: "95 phút",
+              duration: "King dị : 95 phút",
               showtimes: ["19:10", "22:30"],
               poster: "./images/anhmovie1.jpg",
             },
@@ -26,7 +27,7 @@ export default function Showtimes(){
               origin: "Mỹ",
               releaseDate: "14/06/2024",
               ageRestriction: "T18 - PHIM ĐƯỢC PHỔ BIẾN ĐẾN NGƯỜI XEM TỪ ĐỦ 18 TUỔI TRỞ LÊN (18+)",
-              duration: "88 phút",
+              duration: "King dị : 88 phút",
               showtimes: ["19:10", "20:50", "21:20", "22:55", "23:35"],
               poster: "./images/anhmovie2.jpg",
             },
@@ -35,7 +36,7 @@ export default function Showtimes(){
               origin: "Mỹ",
               releaseDate: "07/06/2024",
               ageRestriction: "T18 - PHIM ĐƯỢC PHỔ BIẾN ĐẾN NGƯỜI XEM TỪ ĐỦ 18 TUỔI TRỞ LÊN (18+)",
-              duration: "115 phút",
+              duration: "Hành động : 115 phút",
               showtimes: ["19:15", "20:10", "21:15", "22:10", "23:15"],
               poster: "./images/anhmovie4.jpg",
             },
@@ -44,7 +45,7 @@ export default function Showtimes(){
               origin: "Indonesia",
               releaseDate: "07/06/2024",
               ageRestriction: "T18 - PHIM ĐƯỢC PHỔ BIẾN ĐẾN NGƯỜI XEM TỪ ĐỦ 18 TUỔI TRỞ LÊN (18+)",
-              duration: "123 phút",
+              duration: "King dị : 123 phút",
               showtimes: ["21:55", "23:15"],
               poster: "./images/anhmovie3.jpg",
             },
@@ -70,31 +71,31 @@ export default function Showtimes(){
                     </Nav>
                 </Col>
             </Row>
-            <h3 className="font-bold">Phim đang chiếu</h3>
-            <div className="mb-4">
-        <Button variant="outline-primary" className="mr-2">13-6-2024</Button>
-        <Button variant="outline-primary" className="mr-2">14-6-2024</Button>
-        <Button variant="outline-primary" className="mr-2">15-6-2024</Button>
-        <Button variant="outline-primary" className="mr-2">16-6-2024</Button>
-        <Button variant="outline-primary" className="mr-2">17-6-2024</Button>
+            <h3 className="font-bold bg-gray-900 text-white">Phim đang chiếu</h3>
+            <div className=" mb-4 bg-gray-900">
+        <Button variant="outline-primary" className="mr-2 text-white">13-6-2024</Button>
+        <Button variant="outline-primary" className="mr-2 text-white">14-6-2024</Button>
+        <Button variant="outline-primary" className="mr-2 text-white">15-6-2024</Button>
+        <Button variant="outline-primary" className="mr-2 text-white">16-6-2024</Button>
+        <Button variant="outline-primary" className="mr-2 text-white">17-6-2024</Button>
       </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-4">
                 {movies.map((movie, index) => (
-                  <div key={index} className="bg-gray-900 text-white p-4 rounded-lg">
+                  <div key={index} className="bg-gray-900 text-black p-4 rounded-lg">
                     <div className="flex">
                       <img
                         src={movie.poster}
                         alt={movie.title}
-                        className="w-1/3 rounded-lg"
+                        className="mb-6"
                       />
                       <div className="w-2/3 pl-4">
-                        <h3 className="text-xl font-bold">{movie.title}</h3>
-                        <p className="text-sm">{movie.duration}</p>
-                        <p className="text-sm">Xuất xứ: {movie.origin}</p>
-                        <p className="text-sm">Khởi chiếu: {movie.releaseDate}</p>
-                        <p className="text-sm text-red-500">{movie.ageRestriction}</p>
+                        <h3 className="text-xl font-bold text-white">{movie.title}</h3>
+                        <p className="text-sm text-white">{movie.duration}</p>
+                        <p className="text-sm text-white">Xuất xứ: {movie.origin}</p>
+                        <p className="text-sm text-white">Khởi chiếu: {movie.releaseDate}</p>
+                        <p className="text-sm text-white text-red-500">{movie.ageRestriction}</p>
                         <div className="mt-2">
-                          <h4 className="text-lg">Lịch chiếu</h4>
+                          <h4 className="text-lg text-white">Lịch chiếu</h4>
                           <div className="flex flex-wrap gap-2 mt-1">
                             {movie.showtimes.map((time, idx) => (
                               <button

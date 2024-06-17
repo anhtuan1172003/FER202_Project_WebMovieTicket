@@ -1,9 +1,9 @@
 .bg-gray-900 {
-  background-color: #1a202c;
+  background-color: #4a4747;;
 }
 
-.text-white {
-  color: white;
+.text-black {
+  color:white;
 }
 
 .rounded-lg {
@@ -16,6 +16,7 @@
 
 .text-xl {
   font-size: 1.25rem;
+
 }
 
 .font-bold {
@@ -24,6 +25,7 @@
 
 .text-sm {
   font-size: 0.875rem;
+  color:white;
 }
 
 .text-lg {
@@ -51,7 +53,7 @@
 }
 
 .bg-gray-800 {
-  background-color: #2d3748;
+  background-color: #4a4747;;
 }
 
 .px-4 {
@@ -79,8 +81,20 @@
 }
 .font-bold{
   text-align: center;
+  padding: 0px 20px ;
 }
 .mb-4{
   text-align: center;
   margin: 20px;
+  color: white;
+}
+.mb-6{
+  width: 500px;
+  height: 500px;
+}
+.mr-2{
+  margin: 20px;
+}
+.header{
+  background-color: #4a4747;
 }
