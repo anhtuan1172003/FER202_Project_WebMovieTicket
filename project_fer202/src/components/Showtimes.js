@@ -3,13 +3,9 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import React from 'react';
-import Image from 'react-bootstrap/Image';
-
-import './Showtimes.css'; // Assuming you have some basic styles
+import './Showtimes.css'; 
 
 export default function Showtimes(){
         const movies = [
@@ -53,24 +49,22 @@ export default function Showtimes(){
           
             return (
                 <>
-                <Row className="header">
-                <Col md={1}>
-                    <Image src="./images/movie.jpg" width="50px"/>
-                </Col>
-                <Col md={6}>
-                <Nav defaultActiveKey="/home" as="ul">
-                        <Nav.Item as="li">
-                            <Nav.Link href="/home"><i class="bi bi-house-door-fill"></i>Home</Nav.Link>
-                        </Nav.Item>
-                        <Nav.Item as="li">
-                            <Nav.Link href="/showtimes"><i class="bi bi-currency-dollar"></i>Showtimes</Nav.Link>
-                        </Nav.Item>
-                        <Nav.Item as="li">
-                            <Nav.Link href="/Movie"><i class="bi bi-emoji-tear"></i>Movie</Nav.Link>
-                        </Nav.Item>
-                    </Nav>
-                </Col>
-            </Row>
+               <Navbar expand="lg" className="bg-body-tertiary">
+      <Container>
+        <Col className="header-brand"><Navbar.Brand href="#home"><h1>Cinema</h1></Navbar.Brand></Col>
+        <Col className="header-tab"><Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="me-auto">
+              <Nav.Link href="#schedule">Schedule</Nav.Link>
+              <Nav.Link href="#sales">Sales</Nav.Link>
+              <Nav.Link href="#blog">Blog</Nav.Link>
+              <Nav.Link to="/Authentication">Sign In/Sign Up</Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Col>
+      </Container>
+    </Navbar>
+
             <h3 className="font-bold bg-gray-900 text-white">Phim đang chiếu</h3>
             <div className=" mb-4 bg-gray-900">
         <Button variant="outline-primary" className="mr-2 text-white">13-6-2024</Button>
@@ -112,6 +106,29 @@ export default function Showtimes(){
                   </div>
                 ))}
               </div>
+              <Row className="footer-container">
+      <Row className="footer-left">
+        <Col style={{ textAlign: "left" }}>
+          <h2>About US</h2>
+          <p>
+            <a>Công Ty rạp chiếu phim</a><br />
+            <a><i class="bi bi-telephone"></i>0396835513</a><br />
+            <a><i class="bi bi-voicemail">+11113131</i></a><br />
+          </p>
+        </Col>
+        <Col className="footer-right">
+          <h2><i class="bi bi-google">  </i>
+            <i class="bi bi-facebook">  </i>
+            <i class="bi bi-linkedin">  </i>
+            <i class="bi bi-twitter">  </i>
+            <i class="bi bi-youtube">  </i>
+            <i class="bi bi-envelope">  </i></h2>
+        </Col>
+      </Row>
+      <p>© Copyright 2023</p>
+    </Row>
+
               </>
     );
 };
+
