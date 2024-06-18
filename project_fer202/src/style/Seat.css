@@ -1,0 +1,121 @@
+.app {
+    margin-top: 30px;
+    }
+    
+    .screen-container {
+    text-align: center;
+    margin-bottom: 20px; /* Thêm margin bottom cho khoảng cách giữa màn hình và ghế */
+    }
+    
+    .screen {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+    }
+    
+    .screen::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    background-color: orange;
+    }
+    
+    .seat-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+    }
+    
+    .seat {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 8px;
+    background-color: #1fdaba;
+    color: #ffffff; /* Chuyển màu chữ thành màu trắng */
+    }
+    
+    .seat
+    {
+    background-color: #7552d8;
+    }
+    
+    .seat.selected {
+    background-color: #ec35af;
+    color: white;
+    }
+    
+    .selected-seats {
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: center;
+    }
+    
+    .legend {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    }
+    
+    .legend-item {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    }
+    
+    .legend-item .seat {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+    }
+    
+    .legend-item span {
+    font-size: 14px;
+    }
+    
+    .legend-item .seat.selected {
+    background-color: #ec35af;
+    }
+    .movie-poster {
+    margin-left: -200px;
+    }
+    .movie-poster h3,
+    .movie-poster .description {
+    color: #ffffff;
+    }
+    .movie-poster {
+    display: flex;
+    align-items: center;
+    }
+    
+    .poster {
+    flex: 0 0 40%;
+    margin-right: 20px;
+    }
+    
+    .poster img {
+    width: 100%; 
+    height: auto;
+    display: block;
+    }
+    
+    .description {
+    flex: 1;
+    }
+.app{
+    background-color: #4a4747;
+}
+.poster-image {
+    margin-top: 70px; /* Điều chỉnh khoảng cách bạn muốn */
+}

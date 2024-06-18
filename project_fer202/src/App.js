@@ -3,6 +3,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import './style/App.css';
 import MainContent from "./components/MainContent";
+import ManageSeat from "./components/ManageSeat";
 
 
 const comingmovies = [
@@ -38,6 +39,7 @@ const banners = [
 export default function App() {
   return (
     <div className="app">
+      <Row><ManageSeat/></Row>
       <Row><Col><Header /></Col></Row>
       <Row>
         <Col>
