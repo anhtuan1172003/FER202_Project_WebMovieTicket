@@ -1,0 +1,29 @@
+.payment-page {
+    padding: 2rem;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .payment-page h2 {
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .payment-methods {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+  }
+  
+  .payment-methods .form-check {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .payment-methods .form-check img {
+    width: 50px;
+    margin-right: 0.5rem;
+  }
+  
