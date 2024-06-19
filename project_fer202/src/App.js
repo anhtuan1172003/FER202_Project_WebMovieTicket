@@ -38,32 +38,20 @@ const banners = [
 export default function App() {
   return (
     <div className="app">
-      <Row>
-        <Col><Header /></Col>
-      </Row>
+      <Row><Col><Header /></Col></Row>
       <Row>
         <Col>
           <Carousel style={{ height: "500px", overflow: "hidden" }}>
             {banners.map((banner) => (
               <Carousel.Item >
-                <Image src={banner.imageSrc} style={{ width: "100%", height: "auto" }} />
+                <Image src={banner.imageSrc} style={{ width: "100%", height: "500px" }} />
               </Carousel.Item>
             ))}
           </Carousel>
         </Col>
       </Row>
-      <Row>
-        <Col>
-          <Container>
-            <MainContent comingmovies={comingmovies} showingmovies={showingmovies} />
-          </Container>
-        </Col>
-      </Row>
-      <Row>
-        <Col
-        ><Footer />
-        </Col>
-      </Row>
+      <Row><MainContent comingmovies = {comingmovies} showingmovies= {showingmovies}/></Row>
+      <Row><Col><Footer/></Col></Row>
     </div>
   );
 }

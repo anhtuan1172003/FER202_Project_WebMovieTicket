@@ -1,20 +1,28 @@
-import React from 'react';
+import { Row, Col } from 'react-bootstrap';
+import "../style/Footer.css";
 
 export default function Footer() {
-    return (
-        <footer>
-          <div>About us</div>
-          <div className="social-links">
-            <a href="#">Facebook</a>
-            <a href="#">LinkedIn</a>
-            <a href="#">YouTube</a>
-            <a href="#">Instagram</a>
-          </div>
-          <div>Contact us</div>
-          <div>
-            <a href="mailto:example@gmail.com">Gmail</a>
-            <a href="tel:123456789">Hotline</a>
-          </div>
-        </footer>
-      );
+  return (
+    <Row className="footer-container">
+      <Row className="footer-left">
+        <Col style={{ textAlign: "left" }}>
+          <h2>About US</h2>
+          <p>
+            <a>Công Ty rạp chiếu phim</a><br />
+            <a><i class="bi bi-telephone"></i>0396835513</a><br />
+            <a><i class="bi bi-voicemail">+11113131</i></a><br />
+          </p>
+        </Col>
+        <Col className="footer-right">
+          <h2><i class="bi bi-google">  </i>
+            <i class="bi bi-facebook">  </i>
+            <i class="bi bi-linkedin">  </i>
+            <i class="bi bi-twitter">  </i>
+            <i class="bi bi-youtube">  </i>
+            <i class="bi bi-envelope">  </i></h2>
+        </Col>
+      </Row>
+      <p>© Copyright 2023</p>
+    </Row>
+  );
 }
