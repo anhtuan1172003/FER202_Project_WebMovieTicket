@@ -1,8 +1,10 @@
 import { Row, Col, Container, Image, Carousel } from "react-bootstrap";
 import Header from './components/Header';
 import Footer from './components/Footer';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './style/App.css';
 import MainContent from "./components/MainContent";
+import Authentication from "../src/components/Auth";
 
 
 const comingmovies = [
@@ -35,23 +37,44 @@ const banners = [
   { imageSrc: 'image/banner4.jpeg' },
 ];
 
-export default function App() {
+function Home() {
   return (
-    <div className="app">
-      <Row><Col><Header /></Col></Row>
+    <div>
       <Row>
         <Col>
-          <Carousel style={{ height: "500px", overflow: "hidden" }}>
-            {banners.map((banner) => (
-              <Carousel.Item >
-                <Image src={banner.imageSrc} style={{ width: "100%", height: "500px" }} />
+          <Header />
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          <Carousel style={{ height: '500px', overflow: 'hidden' }}>
+            {banners.map((banner, index) => (
+              <Carousel.Item key={index}>
+                <Image src={banner.imageSrc} style={{ width: '100%', height: '500px' }} />
               </Carousel.Item>
             ))}
           </Carousel>
         </Col>
       </Row>
-      <Row><MainContent comingmovies = {comingmovies} showingmovies= {showingmovies}/></Row>
-      <Row><Col><Footer/></Col></Row>
+      <Row>
+        <MainContent comingmovies={comingmovies} showingmovies={showingmovies} />
+      </Row>
+      <Row>
+        <Col>
+          <Footer />
+        </Col>
+      </Row>
     </div>
+  );
+}
+
+export default function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home/>} />
+        <Route path="/authentication" element={<Authentication />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
