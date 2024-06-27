@@ -8,7 +8,7 @@ export default function Header() {
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
         <Col className="header-brand">
-          <Navbar.Brand href="#home">
+          <Navbar.Brand as={Link} to="/home">
             <h1>Cinema</h1>
           </Navbar.Brand>
         </Col>
@@ -18,7 +18,7 @@ export default function Header() {
             <Nav className="me-auto">
               <Nav.Link href="#schedule">Schedule</Nav.Link>
               <Nav.Link href="#sales">Sales</Nav.Link>
-              <Nav.Link href="#blog">Blog</Nav.Link>
+              <Nav.Link as={Link} to="/blog">Blog</Nav.Link>
               <Nav.Link as={Link} to="/authentication">SignIn/SignUp</Nav.Link>
               <Nav.Link as={Link} to="/userprofile">Profile</Nav.Link>
             </Nav>

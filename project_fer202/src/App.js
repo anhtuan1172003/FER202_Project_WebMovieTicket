@@ -1,10 +1,11 @@
-import { Row, Col, Container, Image, Carousel } from "react-bootstrap";
+import { Row, Col, Image, Carousel } from "react-bootstrap";
 import Header from './components/Header';
 import Footer from './components/Footer';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './style/App.css';
 import MainContent from "./components/MainContent";
 import Authentication from "../src/components/Auth";
+import Blog from "./components/Blog";
 
 
 const comingmovies = [
@@ -42,11 +43,6 @@ function Home() {
     <div>
       <Row>
         <Col>
-          <Header />
-        </Col>
-      </Row>
-      <Row>
-        <Col>
           <Carousel style={{ height: '500px', overflow: 'hidden' }}>
             {banners.map((banner, index) => (
               <Carousel.Item key={index}>
@@ -59,11 +55,6 @@ function Home() {
       <Row>
         <MainContent comingmovies={comingmovies} showingmovies={showingmovies} />
       </Row>
-      <Row>
-        <Col>
-          <Footer />
-        </Col>
-      </Row>
     </div>
   );
 }
@@ -71,10 +62,14 @@ function Home() {
 export default function App() {
   return (
     <BrowserRouter>
+    <Header/>
       <Routes>
         <Route path="/" element={<Home/>} />
+        <Route path="/home" element={<Home/>} />
+        <Route path="/blog" element={<Blog/>} />
         <Route path="/authentication" element={<Authentication />} />
       </Routes>
+      <Footer/>
     </BrowserRouter>
   );
 }
