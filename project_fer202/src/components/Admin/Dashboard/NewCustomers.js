@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import { Container, Row, Col, ListGroup } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function NewCustomers() {
   const [data, setData] = useState([]);
@@ -11,14 +13,18 @@ function NewCustomers() {
   }, []);
 
   return (
-    <div>
-      <h2>Khách hàng mới</h2>
-      <ul>
-        {data.map((customer) => (
-          <li key={customer.id}>{customer.name}</li>
-        ))}
-      </ul>
-    </div>
+    <Container>
+    <Row>
+      <Col>
+        <h2>Khách hàng mới</h2>
+        <ListGroup>
+          {data.map((customer) => (
+            <ListGroup.Item key={customer.id}>{customer.name}</ListGroup.Item>
+          ))}
+        </ListGroup>
+      </Col>
+    </Row>
+  </Container>
   );
 }
 

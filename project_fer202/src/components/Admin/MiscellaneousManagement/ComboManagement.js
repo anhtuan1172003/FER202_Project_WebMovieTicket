@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import { Container, Row, Col, Button, ListGroup } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function ComboManagement() {
   const [combos, setCombos] = useState([]);
@@ -12,18 +14,24 @@ function ComboManagement() {
   }, []);
 
   return (
-    <div>
-      <h1>Quản lý combo</h1>
-      <Link to="/combos/add">Thêm combo mới</Link>
-      <ul>
-        {combos.map((combo) => (
-          <li key={combo.id}>
-            {combo.name} - {combo.price} VND
-            <Link to={`/combos/edit/${combo.id}`}>Sửa</Link>
-          </li>
-        ))}
-      </ul>
-    </div>
+    <Container>
+      <Row className="my-4">
+        <Col>
+          <h1>Quản lý combo</h1>
+          <Button variant="primary" as={Link} to="/combos/add">
+            Thêm combo mới
+          </Button>
+          <ListGroup className="mt-4">
+            {combos.map((combo) => (
+              <ListGroup.Item key={combo.id} className="d-flex justify-content-between align-items-center">
+                {combo.name} - {combo.price} VND
+                <Link to={`/combos/edit/${combo.id}`}>Sửa</Link>
+              </ListGroup.Item>
+            ))}
+          </ListGroup>
+        </Col>
+      </Row>
+    </Container>
   );
 }
 

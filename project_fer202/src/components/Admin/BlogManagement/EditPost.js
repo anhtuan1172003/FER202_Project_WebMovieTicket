@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useParams, useHistory } from 'react-router-dom';
+import { Container, Row, Col, Form, Button } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function EditPost() {
   const { id } = useParams();
@@ -32,20 +34,38 @@ function EditPost() {
   };
 
   return (
-    <div>
-      <h1>Sửa bài viết</h1>
-      <form onSubmit={handleSubmit}>
-        <div>
-          <label>Tiêu đề</label>
-          <input type="text" name="title" value={post.title} onChange={handleChange} required />
-        </div>
-        <div>
-          <label>Nội dung</label>
-          <textarea name="content" value={post.content} onChange={handleChange} required></textarea>
-        </div>
-        <button type="submit">Cập nhật</button>
-      </form>
-    </div>
+    <Container>
+      <Row>
+        <Col>
+          <h1>Sửa bài viết</h1>
+          <Form onSubmit={handleSubmit}>
+            <Form.Group controlId="formTitle">
+              <Form.Label>Tiêu đề</Form.Label>
+              <Form.Control 
+                type="text" 
+                name="title" 
+                value={post.title} 
+                onChange={handleChange} 
+                required 
+              />
+            </Form.Group>
+            <Form.Group controlId="formContent">
+              <Form.Label>Nội dung</Form.Label>
+              <Form.Control 
+                as="textarea" 
+                name="content" 
+                value={post.content} 
+                onChange={handleChange} 
+                required 
+              />
+            </Form.Group>
+            <Button variant="primary" type="submit">
+              Cập nhật
+            </Button>
+          </Form>
+        </Col>
+      </Row>
+    </Container>
   );
 }
 
