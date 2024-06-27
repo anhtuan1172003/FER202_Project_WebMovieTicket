@@ -32,10 +32,10 @@ const showingmovies = [
 ];
 
 const banners = [
-  { imageSrc: 'image/banner1.jpeg' },
-  { imageSrc: 'image/banner2.jpeg' },
-  { imageSrc: 'image/banner3.jpeg' },
-  { imageSrc: 'image/banner4.jpeg' },
+  { imageSrc: 'banner/banner1.jpeg' },
+  { imageSrc: 'banner/banner2.jpeg' },
+  { imageSrc: 'banner/banner3.jpeg' },
+  { imageSrc: 'banner/banner4.jpeg' },
 ];
 
 function Home() {
