@@ -1,0 +1,63 @@
+.account-nav-container {
+    background-color: #f8f9fa; /* Màu nền của navbar */
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .account-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  .account-nav li {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .account-nav li a {
+    text-decoration: none;
+    color: #333;
+    padding: 12px 20px;
+    display: block;
+    transition: color 0.3s ease;
+  }
+  
+  .account-nav li.active a {
+    font-weight: bolder;
+    color: #645e63; /* Màu sắc của tab active */
+    font-size: 18px; /* Kích thước chữ của tab active */
+  }
+  
+  .indicator {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #6b686a; /* Màu sắc chỉ mục của tab active */
+    display: none;
+    transition: width 0.3s ease; /* Hiệu ứng khi thay đổi chiều rộng */
+  }
+  
+  .account-nav li.active .indicator {
+    display: block;
+    width: 100%;
+  }
+  
+  .account-nav li a {
+    text-decoration: none;
+    color: #333;
+    padding: 12px 20px;
+    display: block;
+    transition: color 0.3s ease;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .account-nav li a:hover {
+    color: #c41ea0; /* Màu sắc khi hover vào tab */
+    font-size: 20px; /* Kích thước chữ khi hover */
+  }
+  
