@@ -6,6 +6,7 @@ import './style/App.css';
 import MainContent from "./components/MainContent";
 import Authentication from "../src/components/Auth";
 import Blog from "./components/Blog";
+import Schedule from "./components/Schedule";
 
 
 const comingmovies = [
@@ -68,6 +69,7 @@ export default function App() {
         <Route path="/home" element={<Home/>} />
         <Route path="/blog" element={<Blog/>} />
         <Route path="/authentication" element={<Authentication />} />
+        <Route path="/schedule" element={<Schedule/>} />
       </Routes>
       <Footer/>
     </BrowserRouter>

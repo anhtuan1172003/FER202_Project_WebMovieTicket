@@ -1,0 +1,28 @@
+.movie-page {
+    padding: 2rem;
+  }
+  
+  .movie-page h3 {
+   text-align: center;
+   color: black;
+  }
+  
+  .movie-page .card img {
+    height: 450px;
+    object-fit: cover;
+  }
+  .movie-page p{
+    color:black;
+  }
+  .date{
+    text-align: center;
+    margin: 20px;
+    color: black;
+  }
+ .date Button{
+    margin: 10px; 
+    padding: 8px 16px; 
+ }
+ .flex Button{
+    margin: 2px;
+ }
