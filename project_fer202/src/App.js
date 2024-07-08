@@ -7,6 +7,7 @@ import MainContent from "./components/MainContent";
 import Authentication from "../src/components/Auth";
 import Blog from "./components/Blog";
 import Schedule from "./components/Schedule";
+import MovieDetail from "./components/MovieDetail";
 
 
 const comingmovies = [
@@ -70,6 +71,7 @@ export default function App() {
         <Route path="/blog" element={<Blog/>} />
         <Route path="/authentication" element={<Authentication />} />
         <Route path="/schedule" element={<Schedule/>} />
+        <Route path="/movie/:title" element={<MovieDetail/>} />
       </Routes>
       <Footer/>
     </BrowserRouter>
