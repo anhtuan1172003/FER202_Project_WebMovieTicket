@@ -38,6 +38,49 @@ const banners = [
   { imageSrc: 'image/banner4.jpeg' },
 ];
 
+const blogPosts = [
+  {
+    title: 'Điện Ảnh Vô Tận: Khám Phá Thế Giới Phim Mới Mỗi Ngày',
+    description: 'Tặng ngay 1 ly Pepsi Không Đường khi mua combo bất kỳ.',
+    imageSrc: 'blog/blog1.jpeg'
+  },
+  {
+    title: 'Vé Lên Màn Ảnh Rộng: Trải Nghiệm Điện Ảnh Không Giới Hạn',
+    description: '...',
+    imageSrc: 'blog/blog2.jpeg'
+  },
+  {
+    title: 'Phim Hay Phút Chốc: Đặt Vé Nhanh, Xem Phim Thả Ga',
+    description: '...',
+    imageSrc: 'blog/blog3.jpeg'
+  },
+  {
+    title: 'Rạp Chiếu Bí Mật: Góc Nhìn Độc Quyền Về Phim Đang Chiếu',
+    description: '...',
+    imageSrc: 'blog/blog4.jpeg'
+  },
+  {
+    title: 'CinePulse: Nhịp Đập Của Điện Ảnh Mới',
+    description: '...',
+    imageSrc: 'blog/blog5.jpeg'
+  },
+  {
+    title: 'ScreenScoop: Tin Tức Nóng Hổi Từ Thế Giới Điện Ảnh"',
+    description: '...',
+    imageSrc: 'blog/blog6.jpeg'
+  },
+  {
+    title: 'MovieMingle: Kết Nối Cộng Đồng Mê Phim',
+    description: '...',
+    imageSrc: 'blog/blog7.jpeg'
+  },
+  {
+    title: 'FilmFrontrunners: Đi Đầu Xu Hướng Phim Mới',
+    description: '...',
+    imageSrc: 'blog/blog8.jpeg'
+  }
+];
+
 function Home() {
   return (
     <div>
@@ -66,7 +109,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/home" element={<Home/>} />
-        <Route path="/blog" element={<Blog/>} />
+        <Route path="/blog" element={<Blog blogPosts={blogPosts}/>} />
         <Route path="/authentication" element={<Authentication />} />
       </Routes>
       <Footer/>
