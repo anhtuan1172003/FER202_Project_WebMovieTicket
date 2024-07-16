@@ -1,0 +1,942 @@
+{
+  "movies": [
+    {
+      "id": 1,
+      "title": "Đất Rừng Phương Nam",
+      "origin": "Việt nam",
+      "date": "20/10/2023",
+      "director": "Nguyễn Quang Dũng",
+      "genres": "Lịch sử",
+      "acter": "Trấn Thành ,Huỳnh Đạo Khang,Tuấn Trần,Hứa Vĩ Văn,...",
+      "advise": "T16 - PHIM ĐƯỢC PHỔ BIẾN ĐẾN NGƯỜI XEM TỪ ĐỦ 16 TUỔI TRỞ LÊN (16+)",
+      "description": "Description 1",
+      "duration": "95 phút",
+      "imageSrc": "image/movie1.jpeg",
+      "trailerUrl":"https://www.youtube.com/watch?v=hktzirCnJmQ&t=2s",
+      "ticketPrice": 100000
+    },
+    {
+      "id": 2,
+      "title": "Ròm",
+      "origin": "Việt nam",
+      "date": "27/09/2019",
+      "director": "Trần Thanh Huy",
+      "genres": "Tâm lý, Xã hội",
+      "acter": "Trần Anh Khoa, Wowy, Cát Phượng,...",
+      "advise": "C18 - PHIM CẤM PHỔ BIẾN ĐẾN NGƯỜI XEM DƯỚI 18 TUỔI (18+)",
+      "description": "Description 2",
+      "duration": "79 phút",
+      "imageSrc": "image/movie2.jpeg",
+      "trailerUrl":"https://www.youtube.com/watch?v=9dC77_zJlNo",
+      "ticketPrice": 120000
+    },
+    {
+      "id": 3,
+      "title": "Trạng Quỳnh",
+      "origin": "Việt nam",
+      "date": "05/02/2019",
+      "director": "Đức Thịnh",
+      "genres": "Hài, Lịch sử",
+      "acter": "Trấn Thành, Nhã Phương, Quốc Anh,...",
+      "advise": "P - PHIM PHỔ BIẾN ĐẾN NGƯỜI XEM Ở MỌI ĐỘ TUỔI",
+      "description": "Description 3",
+      "duration": "100 phút",
+      "imageSrc": "image/movie3.jpeg",
+      "trailerUrl":"https://www.youtube.com/watch?v=KlX1md7p3H0",
+      "ticketPrice": 90000
+    },
+    {
+      "id": 4,
+      "title": "Mai",
+      "origin": "Việt nam",
+      "date": "01/01/2024",
+      "director": "Phan Gia Nhật Linh",
+      "genres": "Tình cảm, Gia đình",
+      "acter": "Mai Cát Vi, Xuân Nghị, Khả Như,...",
+      "advise": "T13 - PHIM ĐƯỢC PHỔ BIẾN ĐẾN NGƯỜI XEM TỪ ĐỦ 13 TUỔI TRỞ LÊN (13+)",
+      "description": "Description 4",
+      "duration": "102 phút",
+      "imageSrc": "image/movie4.jpeg",
+      "trailerUrl":"https://www.youtube.com/watch?v=nUV5gKHsrZg",
+      "ticketPrice": 150000
+    },
+    {
+      "id": 5,
+      "title": "Đêm trước ở Soho",
+      "origin": "Anh",
+      "date": "29/10/2021",
+      "director": "Edgar Wright",
+      "genres": "Kinh dị, Hồi hộp",
+      "acter": "Thomasin McKenzie, Anya Taylor-Joy, Matt Smith,...",
+      "advise": "C18 - PHIM CẤM PHỔ BIẾN ĐẾN NGƯỜI XEM DƯỚI 18 TUỔI (18+)",
+      "description": "Description 5",
+      "duration": "116 phút",
+      "imageSrc": "image/movie5.jpeg",
+      "trailerUrl":"https://www.youtube.com/watch?v=tB9WUIv9KH8",
+      "ticketPrice": 110000
+    }
+  ],
+  "comingmovies": [
+    {
+      "id": 1,
+      "title": "Movie 1",
+      "description": "Description 1",
+      "imageSrc": "image/movie1.jpeg",
+      "ticketPrice": 100000
+    },
+    {
+      "id": 2,
+      "title": "Movie 2",
+      "description": "Description 1",
+      "imageSrc": "image/movie2.jpeg",
+      "ticketPrice": 120000
+    },
+    {
+      "id": 3,
+      "title": "'Movie 3'",
+      "description": "Description 1",
+      "imageSrc": "image/movie3.jpeg",
+      "ticketPrice": 90000
+    },
+    {
+      "id": 4,
+      "title": "Movie 4",
+      "description": "Description 1",
+      "imageSrc": "image/movie4.jpeg",
+      "ticketPrice": 150000
+    },
+    {
+      "id": 5,
+      "title": "Movie 5",
+      "description": "Description 1",
+      "imageSrc": "image/movie5.jpeg",
+      "ticketPrice": 110000
+    },
+    {
+      "id": 6,
+      "title": "Movie 6",
+      "description": "Description 1",
+      "imageSrc": "image/movie6.jpeg",
+      "ticketPrice": 110000
+    },
+    {
+      "id": 7,
+      "title": "Movie 7",
+      "description": "Description 1",
+      "imageSrc": "image/movie7.jpeg",
+      "ticketPrice": 110000
+    },
+    {
+      "id": 8,
+      "title": "Movie 8",
+      "description": "Description 1",
+      "imageSrc": "image/movie8.jpeg",
+      "ticketPrice": 110000
+    }
+  ],
+  "schedules": [
+    {
+      "movieId": 1,
+      "showtimes": [
+        {
+          "id": 1,
+          "date": "2024-07-01",
+          "time": "10:00",
+          "seats": [
+            {
+              "seatNumber": "A1",
+              "row": "A",
+              "booked": false
+            },
+            {
+              "seatNumber": "A2",
+              "row": "A",
+              "booked": true
+            },
+            {
+              "seatNumber": "A3",
+              "row": "A",
+              "booked": false
+            },
+            {
+              "seatNumber": "A4",
+              "row": "A",
+              "booked": false
+            },
+            {
+              "seatNumber": "A5",
+              "row": "A",
+              "booked": false
+            },
+            {
+              "seatNumber": "A6",
+              "row": "A",
+              "booked": false
+            },
+            {
+              "seatNumber": "A7",
+              "row": "A",
+              "booked": false
+            },
+            {
+              "seatNumber": "A8",
+              "row": "A",
+              "booked": false
+            },
+            {
+              "seatNumber": "A9",
+              "row": "A",
+              "booked": false
+            },
+            {
+              "seatNumber": "A10",
+              "row": "A",
+              "booked": false
+            },
+            {
+              "seatNumber": "B1",
+              "row": "B",
+              "booked": false
+            },
+            {
+              "seatNumber": "B2",
+              "row": "B",
+              "booked": false
+            },
+            {
+              "seatNumber": "B3",
+              "row": "B",
+              "booked": false
+            },
+            {
+              "seatNumber": "B4",
+              "row": "B",
+              "booked": false
+            },
+            {
+              "seatNumber": "B5",
+              "row": "B",
+              "booked": false
+            },
+            {
+              "seatNumber": "B6",
+              "row": "B",
+              "booked": false
+            },
+            {
+              "seatNumber": "B7",
+              "row": "B",
+              "booked": false
+            },
+            {
+              "seatNumber": "B8",
+              "row": "B",
+              "booked": false
+            },
+            {
+              "seatNumber": "B9",
+              "row": "B",
+              "booked": false
+            },
+            {
+              "seatNumber": "B10",
+              "row": "B",
+              "booked": false
+            },
+            {
+              "seatNumber": "C1",
+              "row": "C",
+              "booked": false
+            },
+            {
+              "seatNumber": "C2",
+              "row": "C",
+              "booked": false
+            },
+            {
+              "seatNumber": "C3",
+              "row": "C",
+              "booked": false
+            },
+            {
+              "seatNumber": "C4",
+              "row": "C",
+              "booked": false
+            },
+            {
+              "seatNumber": "C5",
+              "row": "C",
+              "booked": false
+            },
+            {
+              "seatNumber": "C6",
+              "row": "C",
+              "booked": false
+            },
+            {
+              "seatNumber": "C7",
+              "row": "C",
+              "booked": false
+            },
+            {
+              "seatNumber": "C8",
+              "row": "C",
+              "booked": false
+            },
+            {
+              "seatNumber": "C9",
+              "row": "C",
+              "booked": false
+            },
+            {
+              "seatNumber": "C10",
+              "row": "C",
+              "booked": false
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "date": "2024-07-01",
+          "time": "13:00",
+          "seats": [
+            {
+              "seatNumber": "A1",
+              "row": "A",
+              "booked": false
+            },
+            {
+              "seatNumber": "A2",
+              "row": "A",
+              "booked": false
+            },
+            {
+              "seatNumber": "A3",
+              "row": "A",
+              "booked": true
+            },
+            {
+              "seatNumber": "A4",
+              "row": "A",
+              "booked": false
+            },
+            {
+              "seatNumber": "A5",
+              "row": "A",
+              "booked": false
+            },
+            {
+              "seatNumber": "A6",
+              "row": "A",
+              "booked": false
+            },
+            {
+              "seatNumber": "A7",
+              "row": "A",
+              "booked": false
+            },
+            {
+              "seatNumber": "A8",
+              "row": "A",
+              "booked": false
+            },
+            {
+              "seatNumber": "A9",
+              "row": "A",
+              "booked": false
+            },
+            {
+              "seatNumber": "A10",
+              "row": "A",
+              "booked": false
+            },
+            {
+              "seatNumber": "B1",
+              "row": "B",
+              "booked": false
+            },
+            {
+              "seatNumber": "B2",
+              "row": "B",
+              "booked": false
+            },
+            {
+              "seatNumber": "B3",
+              "row": "B",
+              "booked": false
+            },
+            {
+              "seatNumber": "B4",
+              "row": "B",
+              "booked": false
+            },
+            {
+              "seatNumber": "B5",
+              "row": "B",
+              "booked": false
+            },
+            {
+              "seatNumber": "B6",
+              "row": "B",
+              "booked": false
+            },
+            {
+              "seatNumber": "B7",
+              "row": "B",
+              "booked": false
+            },
+            {
+              "seatNumber": "B8",
+              "row": "B",
+              "booked": false
+            },
+            {
+              "seatNumber": "B9",
+              "row": "B",
+              "booked": false
+            },
+            {
+              "seatNumber": "B10",
+              "row": "B",
+              "booked": false
+            },
+            {
+              "seatNumber": "C1",
+              "row": "C",
+              "booked": false
+            },
+            {
+              "seatNumber": "C2",
+              "row": "C",
+              "booked": false
+            },
+            {
+              "seatNumber": "C3",
+              "row": "C",
+              "booked": false
+            },
+            {
+              "seatNumber": "C4",
+              "row": "C",
+              "booked": false
+            },
+            {
+              "seatNumber": "C5",
+              "row": "C",
+              "booked": false
+            },
+            {
+              "seatNumber": "C6",
+              "row": "C",
+              "booked": false
+            },
+            {
+              "seatNumber": "C7",
+              "row": "C",
+              "booked": false
+            },
+            {
+              "seatNumber": "C8",
+              "row": "C",
+              "booked": false
+            },
+            {
+              "seatNumber": "C9",
+              "row": "C",
+              "booked": false
+            },
+            {
+              "seatNumber": "C10",
+              "row": "C",
+              "booked": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "movieId": 2,
+      "showtimes": [
+        {
+          "id": 3,
+          "date": "2024-07-01",
+          "time": "09:00",
+          "seats": [
+            {
+              "seatNumber": "A1",
+              "row": "A",
+              "booked": false
+            },
+            {
+              "seatNumber": "A2",
+              "row": "A",
+              "booked": false
+            },
+            {
+              "seatNumber": "A3",
+              "row": "A",
+              "booked": true
+            },
+            {
+              "seatNumber": "A4",
+              "row": "A",
+              "booked": false
+            },
+            {
+              "seatNumber": "A5",
+              "row": "A",
+              "booked": false
+            },
+            {
+              "seatNumber": "A6",
+              "row": "A",
+              "booked": false
+            },
+            {
+              "seatNumber": "A7",
+              "row": "A",
+              "booked": false
+            },
+            {
+              "seatNumber": "A8",
+              "row": "A",
+              "booked": false
+            },
+            {
+              "seatNumber": "A9",
+              "row": "A",
+              "booked": false
+            },
+            {
+              "seatNumber": "A10",
+              "row": "A",
+              "booked": false
+            },
+            {
+              "seatNumber": "B1",
+              "row": "B",
+              "booked": false
+            },
+            {
+              "seatNumber": "B2",
+              "row": "B",
+              "booked": false
+            },
+            {
+              "seatNumber": "B3",
+              "row": "B",
+              "booked": false
+            },
+            {
+              "seatNumber": "B4",
+              "row": "B",
+              "booked": false
+            },
+            {
+              "seatNumber": "B5",
+              "row": "B",
+              "booked": false
+            },
+            {
+              "seatNumber": "B6",
+              "row": "B",
+              "booked": false
+            },
+            {
+              "seatNumber": "B7",
+              "row": "B",
+              "booked": false
+            },
+            {
+              "seatNumber": "B8",
+              "row": "B",
+              "booked": false
+            },
+            {
+              "seatNumber": "B9",
+              "row": "B",
+              "booked": false
+            },
+            {
+              "seatNumber": "B10",
+              "row": "B",
+              "booked": false
+            },
+            {
+              "seatNumber": "C1",
+              "row": "C",
+              "booked": false
+            },
+            {
+              "seatNumber": "C2",
+              "row": "C",
+              "booked": false
+            },
+            {
+              "seatNumber": "C3",
+              "row": "C",
+              "booked": false
+            },
+            {
+              "seatNumber": "C4",
+              "row": "C",
+              "booked": false
+            },
+            {
+              "seatNumber": "C5",
+              "row": "C",
+              "booked": false
+            },
+            {
+              "seatNumber": "C6",
+              "row": "C",
+              "booked": false
+            },
+            {
+              "seatNumber": "C7",
+              "row": "C",
+              "booked": false
+            },
+            {
+              "seatNumber": "C8",
+              "row": "C",
+              "booked": false
+            },
+            {
+              "seatNumber": "C9",
+              "row": "C",
+              "booked": false
+            },
+            {
+              "seatNumber": "C10",
+              "row": "C",
+              "booked": false
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "date": "2024-07-01",
+          "time": "12:00",
+          "seats": [
+            {
+              "seatNumber": "A1",
+              "row": "A",
+              "booked": true
+            },
+            {
+              "seatNumber": "A2",
+              "row": "A",
+              "booked": false
+            },
+            {
+              "seatNumber": "A3",
+              "row": "A",
+              "booked": false
+            },
+            {
+              "seatNumber": "A4",
+              "row": "A",
+              "booked": false
+            },
+            {
+              "seatNumber": "A5",
+              "row": "A",
+              "booked": false
+            },
+            {
+              "seatNumber": "A6",
+              "row": "A",
+              "booked": false
+            },
+            {
+              "seatNumber": "A7",
+              "row": "A",
+              "booked": false
+            },
+            {
+              "seatNumber": "A8",
+              "row": "A",
+              "booked": false
+            },
+            {
+              "seatNumber": "A9",
+              "row": "A",
+              "booked": false
+            },
+            {
+              "seatNumber": "A10",
+              "row": "A",
+              "booked": false
+            },
+            {
+              "seatNumber": "B1",
+              "row": "B",
+              "booked": false
+            },
+            {
+              "seatNumber": "B2",
+              "row": "B",
+              "booked": false
+            },
+            {
+              "seatNumber": "B3",
+              "row": "B",
+              "booked": false
+            },
+            {
+              "seatNumber": "B4",
+              "row": "B",
+              "booked": false
+            },
+            {
+              "seatNumber": "B5",
+              "row": "B",
+              "booked": false
+            },
+            {
+              "seatNumber": "B6",
+              "row": "B",
+              "booked": false
+            },
+            {
+              "seatNumber": "B7",
+              "row": "B",
+              "booked": false
+            },
+            {
+              "seatNumber": "B8",
+              "row": "B",
+              "booked": false
+            },
+            {
+              "seatNumber": "B9",
+              "row": "B",
+              "booked": false
+            },
+            {
+              "seatNumber": "B10",
+              "row": "B",
+              "booked": false
+            },
+            {
+              "seatNumber": "C1",
+              "row": "C",
+              "booked": false
+            },
+            {
+              "seatNumber": "C2",
+              "row": "C",
+              "booked": false
+            },
+            {
+              "seatNumber": "C3",
+              "row": "C",
+              "booked": false
+            },
+            {
+              "seatNumber": "C4",
+              "row": "C",
+              "booked": false
+            },
+            {
+              "seatNumber": "C5",
+              "row": "C",
+              "booked": false
+            },
+            {
+              "seatNumber": "C6",
+              "row": "C",
+              "booked": false
+            },
+            {
+              "seatNumber": "C7",
+              "row": "C",
+              "booked": false
+            },
+            {
+              "seatNumber": "C8",
+              "row": "C",
+              "booked": false
+            },
+            {
+              "seatNumber": "C9",
+              "row": "C",
+              "booked": false
+            },
+            {
+              "seatNumber": "C10",
+              "row": "C",
+              "booked": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "paymentMethods": [
+    {
+      "id": 1,
+      "name": "Thẻ nội địa",
+      "imageSrc": "images/localCard.png"
+    },
+    {
+      "id": 2,
+      "name": "Thẻ quốc tế",
+      "imageSrc": "images/internationalCard.png"
+    },
+    {
+      "id": 3,
+      "name": "Ví ZaloPay",
+      "imageSrc": "images/zalopay.png"
+    },
+    {
+      "id": 4,
+      "name": "Ví ShopeePay",
+      "imageSrc": "images/shopeepay.png"
+    },
+    {
+      "id": 5,
+      "name": "Ví MoMo",
+      "imageSrc": "images/momo.png"
+    }
+  ],
+  "blogPosts": [
+    {
+      "id": "1",
+      "title": "Điện Ảnh Vô Tận: Khám Phá Thế Giới Phim Mới Mỗi Ngày",
+      "content": "Trong bài viết này, chúng ta sẽ cùng khám phá những bộ phim mới đang gây bão tại các rạp chiếu trên toàn cầu. Từ các bộ phim bom tấn Hollywood đến những tác phẩm nghệ thuật độc lập, bạn sẽ tìm thấy những gợi ý tuyệt vời cho lần xem phim tiếp theo.",
+      "author": "Author 1",
+      "date": "2024-06-01",
+      "imageSrc": "blog/blog1.jpeg"
+    },
+    {
+      "id": "2",
+      "title": "Vé Lên Màn Ảnh Rộng: Trải Nghiệm Điện Ảnh Không Giới Hạn",
+      "content": "Trải nghiệm điện ảnh tuyệt vời không chỉ dừng lại ở việc xem phim, mà còn bao gồm cả những cảm xúc và kỷ niệm bạn tạo ra. Bài viết này sẽ giới thiệu những cách để tận hưởng tối đa mỗi chuyến đi đến rạp chiếu, từ việc chọn vé đến chỗ ngồi lý tưởng.",
+      "author": "Author 2",
+      "date": "2024-06-05",
+      "imageSrc": "blog/blog2.jpeg"
+    },
+    {
+      "id": "3",
+      "title": "Phim Hay Phút Chốc: Đặt Vé Nhanh, Xem Phim Thả Ga",
+      "content": "Với những công nghệ hiện đại, việc đặt vé xem phim chưa bao giờ dễ dàng hơn. Chúng ta sẽ cùng tìm hiểu về các ứng dụng và trang web tốt nhất để bạn có thể nhanh chóng sở hữu vé xem phim và tận hưởng những giây phút giải trí không bị gián đoạn.",
+      "author": "Author 3",
+      "date": "2024-06-10",
+      "imageSrc": "blog/blog3.jpeg"
+    },
+    {
+      "id": "4",
+      "title": "CinePulse: Nhịp Đập Của Điện Ảnh Mới",
+      "content": "Bài viết này sẽ giới thiệu về các xu hướng điện ảnh mới nhất đang thịnh hành. Từ thể loại phim nào đang lên ngôi, cho đến các đạo diễn và diễn viên mới nổi, CinePulse sẽ giúp bạn luôn bắt kịp nhịp đập của thế giới điện ảnh.",
+      "author": "Author 3",
+      "date": "2024-06-10",
+      "imageSrc": "blog/blog4.jpeg"
+    },
+    {
+      "id": "5",
+      "title": "ScreenScoop: Tin Tức Nóng Hổi Từ Thế Giới Điện Ảnh",
+      "content": "Để không bỏ lỡ bất kỳ tin tức nào từ thế giới điện ảnh, hãy cùng theo dõi ScreenScoop. Chúng tôi sẽ cập nhật những tin tức nóng hổi, từ việc công bố các dự án phim mới, cho đến những giải thưởng và sự kiện quan trọng trong ngành.",
+      "author": "Author 3",
+      "date": "2024-06-10",
+      "imageSrc": "blog/blog5.jpeg"
+    },
+    {
+      "id": "6",
+      "title": "MovieMingle: Kết Nối Cộng Đồng Mê Phim",
+      "content": "Không gì tuyệt vời hơn việc được chia sẻ niềm đam mê phim ảnh với những người cùng sở thích. MovieMingle là nơi bạn có thể kết nối với cộng đồng yêu phim, tham gia các cuộc thảo luận sôi nổi và chia sẻ cảm nhận về các bộ phim bạn yêu thích.",
+      "author": "Author 3",
+      "date": "2024-06-10",
+      "imageSrc": "blog/blog6.jpeg"
+    },
+    {
+      "id": "7",
+      "title": "FilmFrontrunners: Đi Đầu Xu Hướng Phim Mới",
+      "content": "FilmFrontrunners sẽ dẫn bạn đi đầu trong các xu hướng phim mới. Bài viết này sẽ giới thiệu những bộ phim được đánh giá cao và dự kiến sẽ làm mưa làm gió tại các phòng vé. Cùng với đó là những phân tích về lý do tại sao chúng lại thu hút được nhiều sự chú ý.",
+      "author": "Author 3",
+      "date": "2024-06-10",
+      "imageSrc": "blog/blog7.jpeg"
+    },
+    {
+      "id": "8",
+      "title": "Rạp Chiếu Bí Mật: Góc Nhìn Độc Quyền Về Phim Đang Chiếu",
+      "content": "Rạp Chiếu Bí Mật mang đến cho bạn những góc nhìn độc quyền về các bộ phim đang chiếu. Từ những bí mật hậu trường, đến các bài phỏng vấn với diễn viên và đạo diễn, bạn sẽ có cái nhìn sâu hơn về quá trình tạo ra những tác phẩm điện ảnh tuyệt vời.",
+      "author": "Author 3",
+      "date": "2024-06-10",
+      "imageSrc": "blog/blog8.jpeg"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "User One",
+      "email": "userone@example.com",
+      "password": "password1",
+      "role": "user",
+      "profilePic": "images/user1.jpeg"
+    },
+    {
+      "id": 2,
+      "name": "User Two",
+      "email": "usertwo@example.com",
+      "password": "password2",
+      "role": "user",
+      "profilePic": "images/user2.jpeg"
+    },
+    {
+      "id": 3,
+      "name": "Admin User",
+      "email": "admin@example.com",
+      "password": "adminpassword",
+      "role": "admin",
+      "profilePic": "images/admin.jpeg"
+    }
+  ],
+  "roles": [
+    {
+      "id": 1,
+      "role": "user",
+      "permissions": [
+        "view_movies",
+        "view_schedules",
+        "book_tickets",
+        "view_blog"
+      ]
+    },
+    {
+      "id": 2,
+      "role": "admin",
+      "permissions": [
+        "view_movies",
+        "view_schedules",
+        "book_tickets",
+        "view_blog",
+        "manage_movies",
+        "manage_schedules",
+        "manage_users",
+        "manage_blog"
+      ]
+    }
+  ],
+  "payments": [
+    {
+      "id": 1,
+      "userId": 1,
+      "showtimeId": 1,
+      "seatsBooked": [
+        {
+          "seatNumber": "A2",
+          "row": "A"
+        },
+        {
+          "seatNumber": "A3",
+          "row": "A"
+        }
+      ],
+      "totalAmount": 200000,
+      "paymentMethod": "Thẻ nội địa",
+      "paymentDate": "2024-07-01"
+    }
+  ]
+}
