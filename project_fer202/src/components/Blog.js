@@ -4,11 +4,6 @@ import { useEffect, useState, } from "react";
 import { useNavigate, Link } from 'react-router-dom';
 import '../style/Blog.css'
 
-<<<<<<< Updated upstream
-export default function Blog({blogPosts=[]}) {
-
-  
-=======
 export default function Blog() {
   const [blogPosts, setBlogPosts] = useState([]);
   const navigate = useNavigate();
@@ -22,7 +17,7 @@ export default function Blog() {
           .then(result => setBlogPosts(result))
           .catch(error => console.log(error));
   }, []);
->>>>>>> Stashed changes
+
     return (
         <Container className="blog-page">
                 <h2>Khuyến Mãi Mới</h2>

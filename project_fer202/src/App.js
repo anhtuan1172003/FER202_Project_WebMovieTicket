@@ -6,12 +6,7 @@ import './style/App.css';
 import MainContent from "./components/MainContent";
 import Authentication from "../src/components/Auth";
 import Blog from "./components/Blog";
-<<<<<<< Updated upstream
-=======
 import Post from "./components/Post";
-import Schedule from "./components/Schedule";
-import MovieDetail from "./components/MovieDetail";
->>>>>>> Stashed changes
 
 
 const comingmovies = [
@@ -115,12 +110,8 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/home" element={<Home/>} />
-<<<<<<< Updated upstream
-        <Route path="/blog" element={<Blog blogPosts={blogPosts}/>} />
-=======
         <Route path="/blog" element={<Blog/>} />
         <Route path='/blog/:postId' element={<Post/>} />
->>>>>>> Stashed changes
         <Route path="/authentication" element={<Authentication />} />
       </Routes>
       <Footer/>
