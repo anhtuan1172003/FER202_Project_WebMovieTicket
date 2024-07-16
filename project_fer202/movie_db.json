@@ -803,28 +803,68 @@
   ],
   "blogPosts": [
     {
-      "id": 1,
-      "title": "Blog Post 1",
-      "content": "Content for blog post 1",
+      "id": "1",
+      "title": "Điện Ảnh Vô Tận: Khám Phá Thế Giới Phim Mới Mỗi Ngày",
+      "content": "Trong bài viết này, chúng ta sẽ cùng khám phá những bộ phim mới đang gây bão tại các rạp chiếu trên toàn cầu. Từ các bộ phim bom tấn Hollywood đến những tác phẩm nghệ thuật độc lập, bạn sẽ tìm thấy những gợi ý tuyệt vời cho lần xem phim tiếp theo.",
       "author": "Author 1",
       "date": "2024-06-01",
-      "imageSrc": "images/blog1.jpeg"
+      "imageSrc": "blog/blog1.jpeg"
     },
     {
-      "id": 2,
-      "title": "Blog Post 2",
-      "content": "Content for blog post 2",
+      "id": "2",
+      "title": "Vé Lên Màn Ảnh Rộng: Trải Nghiệm Điện Ảnh Không Giới Hạn",
+      "content": "Trải nghiệm điện ảnh tuyệt vời không chỉ dừng lại ở việc xem phim, mà còn bao gồm cả những cảm xúc và kỷ niệm bạn tạo ra. Bài viết này sẽ giới thiệu những cách để tận hưởng tối đa mỗi chuyến đi đến rạp chiếu, từ việc chọn vé đến chỗ ngồi lý tưởng.",
       "author": "Author 2",
       "date": "2024-06-05",
-      "imageSrc": "images/blog2.jpeg"
+      "imageSrc": "blog/blog2.jpeg"
     },
     {
-      "id": 3,
-      "title": "Blog Post 3",
-      "content": "Content for blog post 3",
+      "id": "3",
+      "title": "Phim Hay Phút Chốc: Đặt Vé Nhanh, Xem Phim Thả Ga",
+      "content": "Với những công nghệ hiện đại, việc đặt vé xem phim chưa bao giờ dễ dàng hơn. Chúng ta sẽ cùng tìm hiểu về các ứng dụng và trang web tốt nhất để bạn có thể nhanh chóng sở hữu vé xem phim và tận hưởng những giây phút giải trí không bị gián đoạn.",
       "author": "Author 3",
       "date": "2024-06-10",
-      "imageSrc": "images/blog3.jpeg"
+      "imageSrc": "blog/blog3.jpeg"
+    },
+    {
+      "id": "4",
+      "title": "CinePulse: Nhịp Đập Của Điện Ảnh Mới",
+      "content": "Bài viết này sẽ giới thiệu về các xu hướng điện ảnh mới nhất đang thịnh hành. Từ thể loại phim nào đang lên ngôi, cho đến các đạo diễn và diễn viên mới nổi, CinePulse sẽ giúp bạn luôn bắt kịp nhịp đập của thế giới điện ảnh.",
+      "author": "Author 3",
+      "date": "2024-06-10",
+      "imageSrc": "blog/blog4.jpeg"
+    },
+    {
+      "id": "5",
+      "title": "ScreenScoop: Tin Tức Nóng Hổi Từ Thế Giới Điện Ảnh",
+      "content": "Để không bỏ lỡ bất kỳ tin tức nào từ thế giới điện ảnh, hãy cùng theo dõi ScreenScoop. Chúng tôi sẽ cập nhật những tin tức nóng hổi, từ việc công bố các dự án phim mới, cho đến những giải thưởng và sự kiện quan trọng trong ngành.",
+      "author": "Author 3",
+      "date": "2024-06-10",
+      "imageSrc": "blog/blog5.jpeg"
+    },
+    {
+      "id": "6",
+      "title": "MovieMingle: Kết Nối Cộng Đồng Mê Phim",
+      "content": "Không gì tuyệt vời hơn việc được chia sẻ niềm đam mê phim ảnh với những người cùng sở thích. MovieMingle là nơi bạn có thể kết nối với cộng đồng yêu phim, tham gia các cuộc thảo luận sôi nổi và chia sẻ cảm nhận về các bộ phim bạn yêu thích.",
+      "author": "Author 3",
+      "date": "2024-06-10",
+      "imageSrc": "blog/blog6.jpeg"
+    },
+    {
+      "id": "7",
+      "title": "FilmFrontrunners: Đi Đầu Xu Hướng Phim Mới",
+      "content": "FilmFrontrunners sẽ dẫn bạn đi đầu trong các xu hướng phim mới. Bài viết này sẽ giới thiệu những bộ phim được đánh giá cao và dự kiến sẽ làm mưa làm gió tại các phòng vé. Cùng với đó là những phân tích về lý do tại sao chúng lại thu hút được nhiều sự chú ý.",
+      "author": "Author 3",
+      "date": "2024-06-10",
+      "imageSrc": "blog/blog7.jpeg"
+    },
+    {
+      "id": "8",
+      "title": "Rạp Chiếu Bí Mật: Góc Nhìn Độc Quyền Về Phim Đang Chiếu",
+      "content": "Rạp Chiếu Bí Mật mang đến cho bạn những góc nhìn độc quyền về các bộ phim đang chiếu. Từ những bí mật hậu trường, đến các bài phỏng vấn với diễn viên và đạo diễn, bạn sẽ có cái nhìn sâu hơn về quá trình tạo ra những tác phẩm điện ảnh tuyệt vời.",
+      "author": "Author 3",
+      "date": "2024-06-10",
+      "imageSrc": "blog/blog8.jpeg"
     }
   ],
   "users": [
