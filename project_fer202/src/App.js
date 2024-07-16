@@ -55,7 +55,7 @@ function Home() {
         </Col>
       </Row>
       <Row>
-        <MainContent comingmovies={comingmovies} showingmovies={showingmovies} />
+        <MainContent/>
       </Row>
     </div>
   );
