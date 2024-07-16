@@ -10,28 +10,7 @@ import Schedule from "./components/Schedule";
 import MovieDetail from "./components/MovieDetail";
 
 
-const comingmovies = [
-  { title: 'Movie 1', description: 'Description 1', imageSrc: 'image/movie1.jpeg' },
-  { title: 'Movie 2', description: 'Description 1', imageSrc: 'image/movie2.jpeg' },
-  { title: 'Movie 3', description: 'Description 1', imageSrc: 'image/movie3.jpeg' },
-  { title: 'Movie 4', description: 'Description 1', imageSrc: 'image/movie4.jpeg' },
-  { title: 'Movie 5', description: 'Description 1', imageSrc: 'image/movie5.jpeg' },
-  { title: 'Movie 6', description: 'Description 1', imageSrc: 'image/movie6.jpeg' },
-  { title: 'Movie 7', description: 'Description 1', imageSrc: 'image/movie7.jpeg' },
-  { title: 'Movie 8', description: 'Description 1', imageSrc: 'image/movie8.jpeg' },
-  // Add more movies here
-];
-const showingmovies = [
-  { title: 'Movie 1', description: 'Description 1', imageSrc: 'image/movie1.jpeg' },
-  { title: 'Movie 2', description: 'Description 1', imageSrc: 'image/movie2.jpeg' },
-  { title: 'Movie 3', description: 'Description 1', imageSrc: 'image/movie3.jpeg' },
-  { title: 'Movie 4', description: 'Description 1', imageSrc: 'image/movie4.jpeg' },
-  { title: 'Movie 5', description: 'Description 1', imageSrc: 'image/movie5.jpeg' },
-  { title: 'Movie 6', description: 'Description 1', imageSrc: 'image/movie6.jpeg' },
-  { title: 'Movie 7', description: 'Description 1', imageSrc: 'image/movie7.jpeg' },
-  { title: 'Movie 8', description: 'Description 1', imageSrc: 'image/movie8.jpeg' },
-  // Add more movies here
-];
+
 
 const banners = [
   { imageSrc: 'banner/banner1.jpeg' },
@@ -71,7 +50,7 @@ export default function App() {
         <Route path="/blog" element={<Blog/>} />
         <Route path="/authentication" element={<Authentication />} />
         <Route path="/schedule" element={<Schedule/>} />
-        <Route path="/movie/:title" element={<MovieDetail/>} />
+        <Route path="/movie/:mId" element={<MovieDetail />} />
       </Routes>
       <Footer/>
     </BrowserRouter>
