@@ -45,8 +45,8 @@ export default function HomePage() {
   return (
     <div>
       <Header />
+      <ControlledCarousel/>
       <div className="container min-vh-100">
-        <ControlledCarousel />
         <div>
           <h1 className="my-5">Movie List</h1>
           <Form className="mb-4">

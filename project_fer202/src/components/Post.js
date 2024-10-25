@@ -5,29 +5,29 @@ import { useParams } from "react-router-dom";
 import '../style/Blog.css'
 
 export default function Blog() {
-  const [posts, setPosts] = useState([]);
+  const [blogPosts, setblogPosts] = useState([]);
   const {postId} = useParams();
 
   useEffect(() => {
       //GER - URI: http://localhost:9999/blogPosts/${pid}
       fetch(`http://localhost:9999/blogPosts/${postId}`)
           .then(res => res.json())
-          .then(result => setPosts(result))
+          .then(result => setblogPosts(result))
           .catch(error => console.log(error));
   }, []);
   
     return (
         <Container className="blog-page">
-                <h2>{posts.title}</h2>
+                <h2>{blogPosts.title}</h2>
                 <Row>
                     <Col>
-                    <Image src={posts.imageSrc} rounded />
+                    <Image src={`http://localhost:9999/${blogPosts.imageSrc}`} fluid />
                     <h4>
-                        {posts.author}
+                        {blogPosts.author}
                         <br/>
-                        {posts.date}
+                        {blogPosts.date}
                     </h4>
-                    <span>{posts.content}</span>
+                    <span>{blogPosts.content}</span>
                     </Col>
                 </Row>
         </Container>

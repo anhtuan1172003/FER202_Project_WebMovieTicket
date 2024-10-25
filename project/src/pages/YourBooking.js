@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { Container, Row, Col, Card, ListGroup } from 'react-bootstrap';
+import { Container, Row, Col, Card, ListGroup, Button } from 'react-bootstrap';
 import { getMovieById } from '../api/movie-api';
-import { getBookingByUserId } from '../api/booking-api';
+import { getBookings, getBookingByUserId, deleteBooking } from '../api/booking-api';
 import Header from '../components/Header';
 
 export default function YourBooking() {
@@ -30,6 +30,11 @@ export default function YourBooking() {
     fetchBookings();
   }, [id]);
 
+  const handleDelete = async (id) => {
+    await deleteBooking(id);
+    const bookingsData = await getBookings();
+    setBookings(bookingsData);
+  };
   return (
     <>
       <Header />
@@ -65,6 +70,9 @@ export default function YourBooking() {
                         <ListGroup.Item><strong>Booking Time:</strong> {booking.bookingTime}</ListGroup.Item>
                         <ListGroup.Item><strong>Seats:</strong> {booking.seats}</ListGroup.Item>
                       </ListGroup>
+                      <Col>
+                        <Button variant="danger" onClick={() => handleDelete(booking.id)}>Delete</Button>
+                      </Col>
                     </Col>
                   </Row>
                 </Card.Body>

@@ -25,7 +25,7 @@ export default function Blog() {
                     {blogPosts.map((blogPost, index) => (
                         <Col md={4} key={index} className="mb-4">
                             <Card>
-                                <Card.Img variant="top" src={blogPost.imageSrc}/>
+                                <Card.Img variant="top" src={blogPost.imageSrc} onClick={() => handleClick(blogPost.id)}/>
                                 <Card.Body>
                                     <Card.Title onClick={() => handleClick(blogPost.id)}>{blogPost.title}</Card.Title>
                                 </Card.Body>

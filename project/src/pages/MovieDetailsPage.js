@@ -2,13 +2,15 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 import { getMovieById } from '../api/movie-api';
-import { createBooking } from '../api/booking-api';
+import { createBooking, getBookingsByMovieId } from '../api/booking-api';
 
 export default function MovieDetailsPage() {
   const { id } = useParams();
   const [movie, setMovie] = useState(null);
   const [seats, setSeats] = useState(1);
+  const [bookedSeats, setBookedSeats] = useState([]);
   const userId = localStorage.getItem('userId');
   const navigate = useNavigate();
 
@@ -17,11 +19,23 @@ export default function MovieDetailsPage() {
       const movieData = await getMovieById(id);
       setMovie(movieData);
     };
-    
+
+    const fetchBookings = async () => {
+      const bookings = await getBookingsByMovieId(id);
+      setBookedSeats(bookings.map(booking => booking.seats));
+    };
+
     fetchMovie();
+    fetchBookings();
   }, [id]);
 
   const handleBooking = async () => {
+    // Check for overlapping seats
+    if (bookedSeats.includes(seats)) {
+      alert(`Seats ${seats} are already booked. Please choose different seats.`);
+      return;
+    }
+
     const booking = {
       userId,
       movieId: id,
@@ -58,34 +72,36 @@ export default function MovieDetailsPage() {
             <p>Year: {movie.year}</p>
             <p>Genre: {movie.genre}</p>
             <p>{movie.description}</p>
-            
-              {
-                userId ? (
-                  <Form className="mt-4">
-              <Form.Group as={Row} controlId="formSeats">
-                <Form.Label column sm="2">Seats</Form.Label>
-                <Col sm="10">
-                  <Form.Control 
-                    type="number" 
-                    value={seats} 
-                    onChange={(e) => setSeats(e.target.value)} 
-                    min="1" 
-                    max="10" 
-                  />
-                </Col>
-              </Form.Group>
+            <p>Price: {movie.price}</p>
+
+            {
+              userId ? (
+                <Form className="mt-4">
+                  <Form.Group as={Row} controlId="formSeats">
+                    <Form.Label column sm="2">Seats</Form.Label>
+                    <Col sm="10">
+                      <Form.Control
+                        type="number"
+                        value={seats}
+                        onChange={(e) => setSeats(e.target.value)}
+                        min="1"
+                        max="10"
+                      />
+                    </Col>
+                  </Form.Group>
                   <Button variant="primary" onClick={handleBooking} className="mt-3">
                     Book Now
                   </Button>
-                  </Form>
-                ) : (
-                  <Button variant="primary" onClick={() => navigate("/login")}>Login to book</Button>
-                )
-              }
-            
+                </Form>
+              ) : (
+                <Button variant="primary" onClick={() => navigate("/login")}>Login to book</Button>
+              )
+            }
+
           </Col>
         </Row>
       </Container>
+      <Footer />
     </div>
   );
 }
